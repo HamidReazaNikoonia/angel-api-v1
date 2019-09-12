@@ -122,6 +122,8 @@ router.route('/refresh-token')
 router.route('/facebook')
   .post(validate(oAuth), oAuthLogin('facebook'), controller.oAuth);
 
+
+
 /**
  * @api {post} v1/auth/google Google Login
  * @apiDescription Login with google. Creates a new user if it does not exist
